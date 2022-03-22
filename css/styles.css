@@ -1,0 +1,819 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 980px;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  width: 136px;
+  height: 42px;
+  background-image: url("../images/logo_black.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav .links a {
+  color: black;
+  text-decoration: none;
+}
+nav .links span {
+  color: #79addc;
+  margin: 0 20px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #79addc;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+footer .logo {
+  height: 42px;
+  width: 136px;
+  background-image: url("../images/logo.png");
+}
+footer .text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+footer .icons {
+  font-size: larger;
+}
+
+.about {
+  margin-top: 110px;
+  margin-bottom: 180px;
+}
+.about .about-header h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+.about .about-header hr {
+  width: 151px;
+  background-color: black;
+  border: 1px solid;
+  margin-bottom: 37px;
+}
+.about .about-client-quotes {
+  margin-top: 107px;
+}
+.about .about-client-quotes .client-quote-title {
+  font-size: 40px;
+}
+.about .about-client-quotes hr {
+  width: 255px;
+  background-color: black;
+  border: 1px solid;
+  margin-bottom: 37px;
+}
+.about .about-client-quotes .client-quote-wrapper {
+  max-width: 722px;
+  display: flex;
+  position: relative;
+  margin-bottom: 37px;
+}
+.about .about-client-quotes .client-quote-wrapper .client-image {
+  width: 260px;
+  height: 150px;
+  overflow: hidden;
+  margin-right: 21px;
+}
+.about .about-client-quotes .client-quote-wrapper .client-image img {
+  width: 100%;
+}
+.about .about-client-quotes .client-quote-wrapper .client-quote {
+  width: 440px;
+  margin-bottom: 20px;
+}
+.about .about-client-quotes .client-quote-wrapper .client-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #79addc;
+}
+
+.about-promo {
+  max-width: 980px;
+  min-height: 304px;
+  background-color: red;
+}
+.about-promo .promo {
+  height: 200px;
+  width: 235px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-promo .promo .promo-text {
+  font-size: 24px;
+  font-family: cursive;
+  margin-bottom: 60px;
+}
+.about-promo .promo .read-btn {
+  background-color: #79addc;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner {
+  max-width: 980px;
+  height: 200px;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.banner header {
+  position: absolute;
+  top: 53px;
+  left: 416px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+.banner p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+
+.tour-wrapper {
+  max-width: 980px;
+  min-height: 400px;
+  margin: 48px auto 0 auto;
+}
+.tour-wrapper .tour-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+.tour-wrapper .tour-row .tour1 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/israel.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour1 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour1 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour1 button {
+  background-color: #79addc;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour2 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/usa.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour2 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour2 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour2 button {
+  background-color: #79addc;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour3 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/australia.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour3 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour3 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour3 button {
+  background-color: #79addc;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour4 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/nz.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour4 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour4 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour4 button {
+  background-color: #79addc;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour5 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/france.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour5 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour5 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour5 button {
+  background-color: #79addc;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour6 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/egypt.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour6 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour6 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour6 button {
+  background-color: #79addc;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour7 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/japan.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour7 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour7 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour7 button {
+  background-color: #79addc;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour8 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/canada.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour8 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour8 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour8 button {
+  background-color: #79addc;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.tour-wrapper .tour-row .tour9 {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/uae.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
+.tour-wrapper .tour-row .tour9 h3 {
+  color: white;
+  font-size: 50px;
+  margin: 37px auto 0 auto;
+  text-decoration: none;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour9 p {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+}
+.tour-wrapper .tour-row .tour9 button {
+  background-color: #79addc;
+  margin-top: 57px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.destination .banner-israel {
+  max-width: 980px;
+  height: 413px;
+  background-color: #79addc;
+  background-image: url("../images/banners/israelbanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-israel header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-israel p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-america {
+  max-width: 980px;
+  height: 413px;
+  background-color: #79addc;
+  background-image: url("../images/banners/americabanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-america header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-america p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-australia {
+  max-width: 980px;
+  height: 413px;
+  background-color: #79addc;
+  background-image: url("../images/banners/australiabanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-australia header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-australia p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-canada {
+  max-width: 980px;
+  height: 413px;
+  background-color: #79addc;
+  background-image: url("../images/banners/canadabanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-canada header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-canada p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-egypt {
+  max-width: 980px;
+  height: 413px;
+  background-color: #79addc;
+  background-image: url("../images/banners/egyptbanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-egypt header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-egypt p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-france {
+  max-width: 980px;
+  height: 413px;
+  background-color: #79addc;
+  background-image: url("../images/banners/francebanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-france header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-france p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-japan {
+  max-width: 980px;
+  height: 413px;
+  background-color: #79addc;
+  background-image: url("../images/banners/japanbanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-japan header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-japan p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-nz {
+  max-width: 980px;
+  height: 413px;
+  background-color: #79addc;
+  background-image: url("../images/banners/nzbanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-nz header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-nz p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .banner-uae {
+  max-width: 980px;
+  height: 413px;
+  background-color: #79addc;
+  background-image: url("../images/banners/uaebanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+.destination .banner-uae header {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.destination .banner-uae p {
+  position: absolute;
+  top: 269px;
+  left: 283px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 714px;
+  height: 50px;
+}
+.destination .days .day {
+  margin-bottom: 70px;
+}
+.destination .days .day h1 {
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-size: 60px;
+  margin-bottom: -10px;
+  margin-top: 29px;
+}
+.destination .days .day hr {
+  width: 111px;
+  background-color: black;
+  border: 1px solid;
+  margin-bottom: 37px;
+}
+
+/*# sourceMappingURL=styles.css.map */

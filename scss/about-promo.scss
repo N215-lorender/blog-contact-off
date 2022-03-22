@@ -1,0 +1,23 @@
+.about-promo{
+    max-width: $content-width;
+    min-height: 304px;
+    background-color: red;
+
+    .promo{
+        @include promo($hi: 200px);
+
+        .promo-text{
+            font-size: 24px;
+            font-family: cursive;
+            margin-bottom: 60px;
+        }
+
+        .read-btn{
+            background-color: $common-background;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}

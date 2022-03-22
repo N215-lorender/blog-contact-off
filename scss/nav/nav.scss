@@ -1,0 +1,31 @@
+nav{
+    max-width: $content-width;
+    margin:0 auto;
+    border-bottom: 2px solid black ;
+    text-decoration: none;
+    min-height: $nav-footer-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        width:136px;
+        height:42px;
+        background-image: url("../images/logo_black.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .links{
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        span {
+            color: $common-background;
+            margin: 0 20px;
+        }
+    }
+}

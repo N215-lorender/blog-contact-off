@@ -1,0 +1,56 @@
+.destination{
+    .banner-israel{
+      @include dest-banner("../images/banners/israelbanner.png"); 
+    }
+
+    .banner-america{
+        @include dest-banner("../images/banners/americabanner.png"); 
+    }
+
+    .banner-australia{
+    @include dest-banner("../images/banners/australiabanner.png"); 
+    }
+
+    .banner-canada{
+        @include dest-banner("../images/banners/canadabanner.png"); 
+    }
+
+    .banner-egypt{
+        @include dest-banner("../images/banners/egyptbanner.png"); 
+    }
+
+    .banner-france{
+        @include dest-banner("../images/banners/francebanner.png"); 
+    }
+
+    .banner-japan{
+        @include dest-banner("../images/banners/japanbanner.png"); 
+    }
+
+    .banner-nz{
+        @include dest-banner("../images/banners/nzbanner.png"); 
+    }
+
+    .banner-uae{
+        @include dest-banner("../images/banners/uaebanner.png"); 
+    }
+    .days{
+        
+        .day{
+            margin-bottom: 70px;
+            h1{
+                font-family: proxima-nova-extra-condensed, sans-serif;
+                font-size: 60px;
+                margin-bottom: -10px;
+                margin-top: 29px;
+            }
+            hr{
+                width: 111px;
+                background-color: black;
+                border:1px solid;
+                margin-bottom: 37px;
+            }
+            
+        }
+    }
+}

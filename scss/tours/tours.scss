@@ -1,0 +1,44 @@
+.tour-wrapper{
+    max-width: $content-width;
+    min-height: 400px;
+    margin: 48px auto 0 auto;
+    
+    
+
+    .tour-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        margin: 0 auto;
+        margin-bottom: 55px;
+
+        .tour1{
+            @include box("../images/israel.png");
+        }
+        .tour2{
+            @include box("../images/usa.png");
+        }
+        .tour3{
+            @include box("../images/australia.png");
+        }
+        .tour4{
+            @include box("../images/nz.png");
+        }
+        .tour5{
+            @include box("../images/france.png");
+        }
+        .tour6{
+            @include box("../images/egypt.png");
+        }
+        .tour7{
+            @include box("../images/japan.png");
+        }
+        .tour8{
+            @include box("../images/canada.png");
+        }
+        .tour9{
+            @include box("../images/uae.png");
+        }
+    }
+}
